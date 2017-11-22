@@ -1,0 +1,107 @@
+body {
+	background: #5286c1;
+	font-family: sans-serif;
+}
+
+.wrapper {
+    margin: 0 0 25px 25px;
+    width: 800px;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    height: 110px;
+    z-index: 100;
+}
+
+.header a,
+.header div {
+	display: inline-block;
+}
+
+.logo {
+	position: relative;
+	left: 80px;
+	top: 10px;
+}
+
+.weather {
+	position: relative;
+	left:  200px;
+}
+
+nav {
+	clear: both;
+	margin-top: 30px;
+}
+
+
+nav ul,
+footer ul {
+	background: #4371a3;
+	list-style-type: none;
+	padding: 5px;
+	text-align: center;
+}
+
+.intro > div {
+	float: left;
+}
+
+.intro > div  img {
+	max-width: 100%;
+	float: left;
+}
+
+.intro-col-2 {
+	width:  20%;
+}
+
+.intro-col-8 {
+	width:  58%;
+	padding:  0 5px;
+}
+
+.intro-col-8 > div:nth-child(2) {
+	clear: both;
+}
+
+.intro-col-8 > div:first-child img:first-child,
+.intro-col-8 > div:nth-child(2) img:nth-child(2) {
+	max-width: 70%;
+}
+
+.intro-col-8 div:first-child img:nth-child(2),
+.intro-col-8 > div:nth-child(2) img:first-child 
+ {
+	max-width: 30%;
+}
+
+
+
+footer {
+	clear: both;
+}
+
+footer ul {
+	background: #16406b;
+}
+
+nav ul li,
+footer ul li{
+	display: inline-block;
+	padding:  3px 10px;
+}
+
+nav ul li  a,
+footer ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+
+

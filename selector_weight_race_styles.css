@@ -1,0 +1,66 @@
+* {
+	border:  1px solid black;
+	min-height: 30px;
+	margin: 5px;
+}
+
+span {
+	display: block;
+}
+
+/* depth1 */
+section {
+	border-width:  10px;
+}
+/* depth2 */
+section > div {
+	border-width: 7px;
+	width: 80%;
+	margin:  10px auto;
+}
+/* depth3 */
+section div > p {
+	border-width: 5px;
+	width: 60%;
+	margin:  10px auto;
+}
+/* depth4 */
+section div p > span {
+	border-width: 3px;
+	width: 40%;
+	margin:  10px auto;
+}
+/* depth5 */
+section div p span img {
+	border-width: 2px;
+	width: 20%;
+	margin:  10px auto;
+}
+
+
+/* all divs with this attribute  */
+div[data-contenttype] {
+	background-color:  pink;
+}
+/* all divs with this attribute and this value */
+div[data-contenttype="text"] {
+	background-color:  teal;
+}
+/*all divs with this attribute and a value that ends with 'quote'*/
+div[data-contenttype$="quote"] {
+	border:  3px solid blue;
+	background-color:  gray;
+}
+/*all divs (which are descendants of a section) with this attribute and a value that begins with 'different'*/
+section div[data-contenttype|="different"] {
+	background-color:  yellow !important;
+}
+/*all divs (which are descendants of a section) with this attribute and a value that contains 'th' anywhere*/
+section div[data-contenttype*="th"] {
+	background-color:  blueviolet;
+}
+/*all spans (which are descendants of a section) with this attribute and a value that contains 'th' anywhere*/
+section span[data-contenttype$="cat"] {
+	background-color:  brown;
+}
+
